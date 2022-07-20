@@ -2,14 +2,17 @@
   --primary-font: helvetica;
   --secondary-font: arial;
   --primary-color: #000;
-  --secondary-color: #fff;
+  --secondary-color: #fff
   --blue: blue;
   --red: red;
   --green: rgb(9, 255, 0);
   --yellow: yellow;
 }
 
-.App {
-  background-color: var(--primary-color);
-  color: white;
+.App{
+    background-color: var(--primary-color);
+}
+
+.Dictionary{
+    background-color: var(--primary-color);
 }
