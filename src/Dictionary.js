@@ -8,7 +8,12 @@ export default function Dictionary() {
   const [results, setResults] = useState(null);
   let form = (
     <form onSubmit={search} className="form">
-      <input type="search" autoFocus={true} onChange={updateKeyword} />
+      <input
+        type="search"
+        autoFocus={true}
+        onChange={updateKeyword}
+        placeHolder="Enter text here"
+      />
     </form>
   );
   function handleResponse(response) {

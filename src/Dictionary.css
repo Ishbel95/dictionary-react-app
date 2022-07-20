@@ -1,1 +1,17 @@
+.form input {
+  display: block;
+  margin: 5% auto;
+  width: min(50%, 700px);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  text-align: center;
+  font-size: 2.5em;
+}
+.form input::placeholder {
+  color: var(--secondary-color);
+}
 
+.form input:focus {
+  outline: none;
+}
