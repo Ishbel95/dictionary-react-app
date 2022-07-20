@@ -8,3 +8,7 @@
   --green: rgb(9, 255, 0);
   --yellow: yellow;
 }
+
+body {
+  background-color: var(--primary-color);
+}
