@@ -6,7 +6,11 @@ import Results from "./Results";
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
   const [results, setResults] = useState(null);
-
+  let form = (
+    <form onSubmit={search} className="form">
+      <input type="search" autoFocus={true} onChange={updateKeyword} />
+    </form>
+  );
   function handleResponse(response) {
     setResults(response.data[0]);
   }
