@@ -1,0 +1,12 @@
+.red-box {
+  background-color: var(--red);
+}
+.blue-box {
+  background-color: var(--blue);
+}
+.yellow-box {
+  background-color: var(--yellow);
+}
+.green-box {
+  background-color: var(--green);
+}
