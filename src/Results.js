@@ -1,8 +1,10 @@
 import React from "react";
 import Meaning from "./Meaning";
 import "./Results.css";
+import Synonyms from "./Synonyms";
 
 export default function Results(props) {
+  console.log(props.result);
   if (props.result) {
     return (
       <div className="Results">
@@ -10,8 +12,14 @@ export default function Results(props) {
           <div className="row">
             <div className="col-md-6 red-box">
               <h1>{props.result.word}</h1>
-              <p>Listen</p>
-              <p>Synonum</p>
+              <div>Listen</div>
+              {props.result.meanings[0].synonyms.map(function(synonym, index) {
+                return (
+                  <div key={index}>
+                    <Synonyms synonyms={synonym} />
+                  </div>
+                );
+              })}
             </div>
             {props.result.meanings.map(function(meaning, index) {
               return (
