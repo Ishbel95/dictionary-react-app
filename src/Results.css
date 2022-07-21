@@ -1,6 +1,7 @@
 .color-box-grid {
   display: grid;
   gap: 1.2em;
+  text-align: center;
 }
 
 .red-box {

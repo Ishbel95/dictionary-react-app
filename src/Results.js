@@ -59,4 +59,3 @@ export default function Results(props) {
     return null;
   }
 }
-//.meanings[0].definitions[0].definition

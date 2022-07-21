@@ -1,7 +1,7 @@
 .form input {
   display: block;
   margin: 5% auto;
-  width: min(50%, 700px);
+  width: min(100%, 700px);
   font-family: var(--primary-font);
   background-color: var(--primary-color);
   color: var(--secondary-color);
