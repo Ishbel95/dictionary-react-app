@@ -7,6 +7,8 @@
 
 .homepage-form {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .homepage-form input {
   width: min(100%, 700px);
