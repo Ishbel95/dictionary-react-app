@@ -3,7 +3,7 @@ import React from "react";
 export default function Phonetics(props) {
   return (
     <div className="Phonetics">
-      <a href={props.phonetics.audio} target="_blank">
+      <a href={props.phonetics.audio} target="_blank" rel="noopener noreferrer">
         Listen
       </a>
       <p>{props.phonetics.text}</p>
