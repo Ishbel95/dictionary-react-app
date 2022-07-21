@@ -2,6 +2,7 @@ import React from "react";
 import Meaning from "./Meaning";
 import "./Results.css";
 import Synonyms from "./Synonyms";
+import Phonetics from "./Phonetics";
 
 export default function Results(props) {
   console.log(props.result);
@@ -12,7 +13,14 @@ export default function Results(props) {
           <div className="row">
             <div className="col-md-6 red-box">
               <h1>{props.result.word}</h1>
-              <div>Listen</div>
+              {props.result.phonetics.map(function(phonetic, index) {
+                return (
+                  <div key={index}>
+                    <Phonetics phonetics={phonetic} />
+                  </div>
+                );
+              })}
+
               {props.result.meanings[0].synonyms.map(function(synonym, index) {
                 return (
                   <div key={index}>
