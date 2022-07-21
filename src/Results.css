@@ -1,3 +1,8 @@
+.color-box-grid {
+  display: grid;
+  gap: 1.2em;
+}
+
 .red-box {
   background-color: var(--red);
 }
@@ -9,4 +14,18 @@
 }
 .green-box {
   background-color: var(--green);
+}
+
+.red-box,
+.blue-box,
+.yellow-box,
+.green-box {
+  border-radius: 2px;
+  padding: 1em;
+}
+
+@media (min-width: 60em) {
+  .color-box-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

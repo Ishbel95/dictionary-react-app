@@ -1,12 +1,12 @@
 :root {
   --primary-font: helvetica;
   --secondary-font: arial;
-  --primary-color: #000;
+  --primary-color: rgb(41, 41, 41);
   --secondary-color: #fff;
-  --blue: blue;
-  --red: red;
-  --green: rgb(9, 255, 0);
-  --yellow: yellow;
+  --blue: rgb(46, 46, 255);
+  --red: rgb(255, 77, 77);
+  --green: rgb(101, 255, 96);
+  --yellow: rgb(255, 255, 82);
 }
 
 body {
