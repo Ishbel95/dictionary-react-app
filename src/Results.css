@@ -24,6 +24,17 @@
   padding: 1em;
 }
 
+.subtitles {
+  font-family: var(--secondary-font);
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
+.content {
+  font-family: var(--third-font);
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+}
 @media (min-width: 60em) {
   .color-box-grid {
     grid-template-columns: repeat(2, 1fr);

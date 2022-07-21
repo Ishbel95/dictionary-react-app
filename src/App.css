@@ -1,6 +1,9 @@
 :root {
-  --primary-font: helvetica;
-  --secondary-font: arial;
+  --primary-font: "Press Start 2P", cursive;
+  --secondary-font: "DotGothic16", sans-serif;
+  --third-font: "Oxanium", cursive;
+  --fourth-font: "Share Tech", sans-serif;
+  --fifth-font: "Turret Road", cursive;
   --primary-color: rgb(41, 41, 41);
   --secondary-color: #fff;
   --blue: rgb(46, 46, 255);
@@ -11,4 +14,5 @@
 
 body {
   background-color: var(--primary-color);
+  text-align: center;
 }

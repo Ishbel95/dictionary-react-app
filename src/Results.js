@@ -13,7 +13,9 @@ export default function Results(props) {
           <div className="color-box-grid">
             <div className="red-box">
               <div className="yellow-box">
-                <h1>{props.result.word}</h1>
+                <h1 className="subtitles text-capitalize">
+                  {props.result.word}
+                </h1>
                 {props.result.phonetics.map(function(phonetic, index) {
                   return (
                     <div key={index}>

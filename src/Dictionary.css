@@ -2,6 +2,7 @@
   display: block;
   margin: 5% auto;
   width: min(50%, 700px);
+  font-family: var(--primary-font);
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border: none;
@@ -10,6 +11,8 @@
 }
 .form input::placeholder {
   color: var(--secondary-color);
+  font-family: var(--primary-font);
+  font-size: 1em;
 }
 
 .form input:focus {
