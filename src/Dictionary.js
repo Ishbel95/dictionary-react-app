@@ -3,8 +3,6 @@ import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 import "./Homepage.css";
-import Photos from "./Photos";
-import "./Results.css";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
@@ -62,19 +60,7 @@ export default function Dictionary() {
     return (
       <div className="Dictionary">
         {form}
-        <div className="color-box-grid">
-          <Results result={results} />
-          <div className="green-box">
-            <div className="blue-box">
-              <Photos photos={photos} />
-            </div>
-          </div>
-          <div className="yellow-box">
-            <div className="red-box">
-              <Photos photos={photos} />
-            </div>
-          </div>
-        </div>
+        <Results result={results} photos={photos} />
       </div>
     );
   } else {

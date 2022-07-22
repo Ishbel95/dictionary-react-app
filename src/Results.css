@@ -2,6 +2,12 @@
   display: grid;
   gap: 1.2em;
   text-align: center;
+  margin: 5%;
+}
+@media (min-width: 60em) {
+  .color-box-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .red-box {
@@ -35,9 +41,4 @@
   font-family: var(--third-font);
   letter-spacing: 0.05em;
   line-height: 1.5em;
-}
-@media (min-width: 60em) {
-  .color-box-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
