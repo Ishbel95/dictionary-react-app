@@ -13,7 +13,7 @@ export default function Phonetics(props) {
         <Button
           onClick={play}
           className="content me-3 phonetics-button"
-          type="warning"
+          type="error"
         >
           Listen
         </Button>

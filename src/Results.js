@@ -15,6 +15,7 @@ export default function Results(props) {
           <div className="red-box">
             <div className="yellow-box stretch">
               <h1 className="subtitles text-capitalize">{props.result.word}</h1>
+
               {props.result.phonetics
                 .slice(0, 2)
                 .map(function(phonetic, index) {
