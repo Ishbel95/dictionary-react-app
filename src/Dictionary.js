@@ -3,10 +3,13 @@ import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 import "./Homepage.css";
+import Photos from "./Photos";
+import "./Results.css";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
   const [results, setResults] = useState(null);
+  const [photos, setPhotos] = useState(null);
   let form = (
     <form onSubmit={search} className="form">
       <input
@@ -35,7 +38,10 @@ export default function Dictionary() {
       </div>
     </div>
   );
-  function handleResponse(response) {
+  function handlePexelsResponse(response) {
+    setPhotos(response.data.photos);
+  }
+  function handleDictionaryResponse(response) {
     setResults(response.data[0]);
   }
   function updateKeyword(event) {
@@ -45,13 +51,30 @@ export default function Dictionary() {
     event.preventDefault();
 
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse);
+
+    let pexelsApiKey = `563492ad6f917000010000017a8eb31d7ce74d6793a287cd202d9d50`;
+    let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=16`;
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    axios.get(pexelsUrl, { headers: headers }).then(handlePexelsResponse);
   }
   if (results) {
     return (
       <div className="Dictionary">
         {form}
-        <Results result={results} />
+        <div className="color-box-grid">
+          <Results result={results} />
+          <div className="green-box">
+            <div className="blue-box">
+              <Photos photos={photos} />
+            </div>
+          </div>
+          <div className="yellow-box">
+            <div className="red-box">
+              <Photos photos={photos} />
+            </div>
+          </div>
+        </div>
       </div>
     );
   } else {

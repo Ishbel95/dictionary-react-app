@@ -1,0 +1,10 @@
+.photo-grid {
+  display: grid;
+  gap: 1em;
+}
+
+@media (min-width: 60em) {
+  .photo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
