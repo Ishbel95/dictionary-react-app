@@ -14,7 +14,7 @@ export default function Dictionary() {
         type="search"
         autoFocus={true}
         onChange={updateKeyword}
-        placeholder="Enter text here"
+        placeholder="Search a word"
       />
     </form>
   );
@@ -25,7 +25,7 @@ export default function Dictionary() {
           type="search"
           autoFocus={true}
           onChange={updateKeyword}
-          placeholder="Enter text here"
+          placeholder="Search a word"
         />
       </form>
       <div className="homepage-grid">
