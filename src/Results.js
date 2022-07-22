@@ -4,6 +4,7 @@ import "./Results.css";
 import Synonyms from "./Synonyms";
 import Phonetics from "./Phonetics";
 import Photos from "./Photos";
+import SecondaryPhotos from "./SecondaryPhotos";
 
 export default function Results(props) {
   console.log(props.result);
@@ -51,7 +52,7 @@ export default function Results(props) {
           </div>
           <div className="yellow-box">
             <div className="red-box stretch">
-              <Photos photos={props.photos} />
+              <SecondaryPhotos photos={props.photos} />
             </div>
           </div>
         </div>
