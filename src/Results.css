@@ -35,7 +35,7 @@
 }
 
 .subtitles {
-  font-size: 2em;
+  font-size: clamp(1.7em, 3vw, 2.5em);
 
   font-family: var(--secondary-font);
   letter-spacing: 0.1em;
@@ -43,7 +43,7 @@
 }
 
 .content {
-  font-size: 1.2em;
+  font-size: clamp(1em, 3vw, 1.4em);
   font-family: var(--third-font);
   letter-spacing: 0.05em;
   line-height: 1.5em;
