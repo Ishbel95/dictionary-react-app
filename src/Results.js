@@ -29,9 +29,9 @@ export default function Results(props) {
                 .slice(0, 4)
                 .map(function(synonym, index) {
                   return (
-                    <div key={index}>
+                    <span key={index}>
                       <Synonyms synonyms={synonym} />
-                    </div>
+                    </span>
                   );
                 })}
             </div>

@@ -14,7 +14,7 @@ export default function Phonetics(props) {
           Listen
         </a>
       </span>
-      <span className="content">{props.phonetics.text}</span>
+      <span className="content ">{props.phonetics.text}</span>
     </div>
   );
 }
