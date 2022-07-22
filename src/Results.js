@@ -14,21 +14,25 @@ export default function Results(props) {
           <div className="red-box">
             <div className="yellow-box stretch">
               <h1 className="subtitles text-capitalize">{props.result.word}</h1>
-              {props.result.phonetics.map(function(phonetic, index) {
-                return (
-                  <div key={index}>
-                    <Phonetics phonetics={phonetic} />
-                  </div>
-                );
-              })}
+              {props.result.phonetics
+                .slice(0, 2)
+                .map(function(phonetic, index) {
+                  return (
+                    <div key={index}>
+                      <Phonetics phonetics={phonetic} />
+                    </div>
+                  );
+                })}
 
-              {props.result.meanings[0].synonyms.map(function(synonym, index) {
-                return (
-                  <div key={index}>
-                    <Synonyms synonyms={synonym} />
-                  </div>
-                );
-              })}
+              {props.result.meanings[0].synonyms
+                .slice(0, 4)
+                .map(function(synonym, index) {
+                  return (
+                    <div key={index}>
+                      <Synonyms synonyms={synonym} />
+                    </div>
+                  );
+                })}
             </div>
           </div>
           {props.result.meanings.map(function(meaning, index) {
