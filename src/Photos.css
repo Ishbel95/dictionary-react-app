@@ -7,4 +7,10 @@
   .photo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+  .photos-results img {
+    transition: all 200ms ease-out;
+  }
+  .photos-results img:hover {
+    transform: scale(2.5);
+  }
 }
