@@ -1,5 +1,6 @@
 import React from "react";
 import "./Phonetics.css";
+import { Button } from "react-nes-component";
 
 export default function Phonetics(props) {
   const audio = new Audio(props.phonetics.audio);
@@ -9,9 +10,13 @@ export default function Phonetics(props) {
   return (
     <div className="Phonetics">
       <span>
-        <button onClick={play} className="content btn me-3">
+        <Button
+          onClick={play}
+          className="content me-3 phonetics-button"
+          type="warning"
+        >
           Listen
-        </button>
+        </Button>
       </span>
       <span className="content ">{props.phonetics.text}</span>
     </div>

@@ -12,13 +12,13 @@
   color: var(--secondary-color);
   border: none;
   text-align: center;
-  font-size: clamp(2em, 3vw, 2.5em);
+  font-size: clamp(2em, 3vw, 3em);
   padding: 0.3em;
 }
 .form input::placeholder {
   color: var(--secondary-color);
   font-family: var(--primary-font);
-  font-size: clamp(0.7em, 3vw, 2.5em);
+  font-size: clamp(0.7em, 3vw, 3em);
 }
 
 .form input:focus {

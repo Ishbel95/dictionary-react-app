@@ -1,12 +1,6 @@
 .Phonetics {
   margin: 5%;
 }
-.Phonetics button {
-  border-radius: 15px;
-  border: solid 1px rgb(143, 143, 1);
-  box-shadow: 0 0 5px rgb(143, 143, 1);
-  padding: 2%;
-
-  color: var(--primary-color);
-  margin: 2%;
+.phonetics-button {
+  font-size: 1em;
 }
