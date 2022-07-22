@@ -12,7 +12,7 @@ export default function Results(props) {
       <div className="Results">
         <div className="color-box-grid">
           <div className="red-box">
-            <div className="yellow-box">
+            <div className="yellow-box stretch">
               <h1 className="subtitles text-capitalize">{props.result.word}</h1>
               {props.result.phonetics.map(function(phonetic, index) {
                 return (
@@ -34,19 +34,19 @@ export default function Results(props) {
           {props.result.meanings.map(function(meaning, index) {
             return (
               <div className="blue-box" key={index}>
-                <div className="green-box">
+                <div className="green-box stretch">
                   <Meaning meaning={meaning} />
                 </div>
               </div>
             );
           })}
           <div className="green-box">
-            <div className="blue-box">
+            <div className="blue-box stretch">
               <Photos photos={props.photos} />
             </div>
           </div>
           <div className="yellow-box">
-            <div className="red-box">
+            <div className="red-box stretch">
               <Photos photos={props.photos} />
             </div>
           </div>

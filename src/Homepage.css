@@ -6,19 +6,20 @@
 }
 
 .homepage-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  margin: 0 auto;
+  display: block;
+  width: min(90%, 900px);
 }
 .homepage-form input {
-  width: min(100%, 700px);
+  width: min(100%, 900px);
   font-family: var(--primary-font);
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border: none;
   text-align: center;
   font-size: 2.5em;
-  line-height: 2em;
+  padding: 0.3em;
 }
 .homepage-form input::placeholder {
   color: var(--secondary-color);
@@ -33,9 +34,16 @@
   .homepage-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .homepage-form {
+    position: relative;
+    top: 32em;
+  }
 }
 @media (max-width: 60em) {
   .homepage-grid {
     grid-template-rows: 25em 25em 25em 25em;
+  }
+  .homepage-form {
+    margin: 5% auto;
   }
 }

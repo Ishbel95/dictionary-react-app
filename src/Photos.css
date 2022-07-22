@@ -3,6 +3,9 @@
   gap: 1em;
 }
 
+.photos-results img {
+  box-shadow: 0 0 10px rgb(104, 104, 104);
+}
 @media (min-width: 60em) {
   .photo-grid {
     grid-template-columns: repeat(4, 1fr);

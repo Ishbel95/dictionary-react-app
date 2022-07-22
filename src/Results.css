@@ -9,7 +9,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
+.stretch {
+  min-height: 100%;
+}
 .red-box {
   background-color: var(--red);
 }
@@ -29,15 +31,19 @@
 .green-box {
   border-radius: 2px;
   padding: 1em;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 
 .subtitles {
+  font-size: 2em;
+
   font-family: var(--secondary-font);
   letter-spacing: 0.1em;
   line-height: 2em;
 }
 
 .content {
+  font-size: 1.2em;
   font-family: var(--third-font);
   letter-spacing: 0.05em;
   line-height: 1.5em;

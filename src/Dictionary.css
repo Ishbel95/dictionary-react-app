@@ -1,13 +1,19 @@
-.form input {
-  display: block;
+.form {
+  box-shadow: 0 0 20px rgb(0, 0, 0);
   margin: 5% auto;
-  width: min(100%, 700px);
+  display: block;
+  width: min(90%, 900px);
+}
+
+.form input {
+  width: min(100%, 900px);
   font-family: var(--primary-font);
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border: none;
   text-align: center;
   font-size: 2.5em;
+  padding: 0.3em;
 }
 .form input::placeholder {
   color: var(--secondary-color);
@@ -17,15 +23,4 @@
 
 .form input:focus {
   outline: none;
-}
-
-.color-box-grid {
-  display: grid;
-  gap: 1.2em;
-  text-align: center;
-}
-@media (min-width: 60em) {
-  .color-box-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
