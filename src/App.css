@@ -1,10 +1,7 @@
 :root {
   --primary-font: "Press Start 2P", cursive;
   --secondary-font: "DotGothic16", sans-serif;
-  --third-font: "Oxanium", cursive;
-  --fourth-font: "Share Tech", sans-serif;
-  --fifth-font: "Turret Road", cursive;
-  --primary-color: rgb(59, 59, 59);
+  --primary-color: rgb(39, 39, 39);
   --secondary-color: #fff;
   --third-color: #212529;
   --blue: rgb(46, 46, 255);

@@ -8,7 +8,7 @@
 .form input {
   width: min(100%, 900px);
   font-family: var(--primary-font);
-  background-color: var(--third-color);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   border: none;
   text-align: center;

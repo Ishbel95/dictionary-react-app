@@ -37,15 +37,24 @@
 .subtitles {
   font-size: clamp(1.7em, 3vw, 2.5em);
   font-weight: 500;
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   letter-spacing: 0.1em;
   line-height: 2em;
+  padding-top: 2.5%;
 }
 
 .content {
   font-size: clamp(1em, 3vw, 1.4em);
-  font-family: var(--third-font);
+  font-family: var(--secondary-font);
   letter-spacing: 0.05em;
-  line-height: 1.5em;
-  font-weight: 300;
+  line-height: 1.7em;
+}
+
+.sc-bwzfXH {
+  background-color: var(--primary-color) !important;
+  box-shadow: 4px 4px 10px rgb(58, 58, 58);
+}
+
+.degmfB {
+  min-height: 100% !important;
 }

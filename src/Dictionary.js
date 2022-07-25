@@ -3,7 +3,7 @@ import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 import "./Homepage.css";
-import { FontFace, Button, Container } from "react-nes-component";
+import { Container } from "react-nes-component";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");

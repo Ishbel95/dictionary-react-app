@@ -54,16 +54,12 @@ export default function Results(props) {
           })}
           <div className="green-box">
             <div className="blue-box stretch">
-              <Container isDark>
-                <Photos photos={props.photos} />{" "}
-              </Container>
+              <Photos photos={props.photos} />{" "}
             </div>
           </div>
           <div className="yellow-box">
             <div className="red-box stretch">
-              <Container isDark>
-                <SecondaryPhotos photos={props.photos} />
-              </Container>
+              <SecondaryPhotos photos={props.photos} />
             </div>
           </div>
         </div>

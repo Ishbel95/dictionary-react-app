@@ -1,6 +1,6 @@
 import React from "react";
-import "./Meaning.css";
-import { FontFace, Button, Container } from "react-nes-component";
+
+import { Container } from "react-nes-component";
 
 export default function Meaning(props) {
   return (
@@ -11,12 +11,14 @@ export default function Meaning(props) {
         </h3>
       </Container>
       <Container isDark>
-        <div>
-          <p className="content">{props.meaning.definitions[0].definition}</p>
-          <em>
-            <p className="content">{props.meaning.definitions[0].example}</p>
-          </em>
-        </div>
+        <p className="content stretch pt-3">
+          {props.meaning.definitions[0].definition}
+        </p>
+        <em>
+          <p className="content stretch pt-3">
+            {props.meaning.definitions[0].example}
+          </p>
+        </em>
       </Container>
     </div>
   );
