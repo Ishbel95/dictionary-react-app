@@ -8,7 +8,11 @@ export default function Photos(props) {
         {props.photos.slice(0, 16).map(function(photo, index) {
           return (
             <div className="photos-results" key={index}>
-              <img src={photo.src.landscape} alt="" className="img-fluid" />
+              <img
+                src={photo.src.landscape}
+                alt="photos of word search"
+                className="img-fluid"
+              />
             </div>
           );
         })}
