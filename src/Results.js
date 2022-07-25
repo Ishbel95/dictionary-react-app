@@ -5,7 +5,7 @@ import Synonyms from "./Synonyms";
 import Phonetics from "./Phonetics";
 import Photos from "./Photos";
 import SecondaryPhotos from "./SecondaryPhotos";
-import { FontFace, Button, Container } from "react-nes-component";
+import { Container } from "react-nes-component";
 
 export default function Results(props) {
   console.log(props.result);

@@ -22,7 +22,7 @@ export default function OpenSourceLink() {
           <span className="red-letter">r</span>
           <span className="blue-letter">c</span>
           <span className="green-letter">e</span>
-          <span className="yellow-letter">{""}</span>
+          <span className="yellow-letter">-</span>
           <span className="red-letter">c</span>
           <span className="blue-letter">o</span>
           <span className="green-letter">d</span>
