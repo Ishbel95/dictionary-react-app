@@ -5,3 +5,7 @@
   font-size: 1em;
   z-index: 2 !important;
 }
+.bDINhj::after,
+.bDINhj::before {
+  border-color: #0f1012 !important;
+}

@@ -15,7 +15,6 @@ export default function Results(props) {
         <div className="color-box-grid">
           <div className="red-box">
             <div className="yellow-box stretch">
-              {" "}
               <Container isDark>
                 <h1 className="subtitles text-capitalize">
                   {props.result.word}
