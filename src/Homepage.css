@@ -26,7 +26,7 @@
 .homepage-form input::placeholder {
   color: var(--secondary-color);
   font-family: var(--primary-font);
-  font-size: clamp(0.7em, 3vw, 2.5em);
+  font-size: clamp(0.7em, 2.2vw, 2.5em);
   z-index: 3 !important;
   text-align: center;
   caret-color: transparent;
