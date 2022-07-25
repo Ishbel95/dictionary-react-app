@@ -22,6 +22,7 @@
   font-size: clamp(2em, 3vw, 2.5em);
   padding: 0.3em;
   z-index: 4 !important;
+  caret-color: transparent;
 }
 .homepage-form input::placeholder {
   color: var(--secondary-color);
@@ -29,6 +30,8 @@
   font-size: clamp(0.7em, 3vw, 2.5em);
   z-index: 3 !important;
   text-align: center;
+  caret-color: transparent;
+  padding: 5%;
 }
 .homepage-form input:after {
   content: "";
