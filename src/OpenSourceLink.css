@@ -5,11 +5,13 @@
   margin: 1% auto;
   font-size: clamp(1em, 0.5em, 3em);
   font-family: var(--primary-font);
-  border: 3px solid var(--secondary-color);
-  padding: 1%;
-  width: 60%;
+  width: 47%;
+  position: relative;
+  z-index: 3;
 }
 .OpenSourceLink a {
+  position: relative;
+  z-index: 3;
   text-decoration: none;
   color: var(--primary-color);
 }
