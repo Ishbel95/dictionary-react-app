@@ -3,4 +3,5 @@
 }
 .phonetics-button {
   font-size: 1em;
+  z-index: 2 !important;
 }

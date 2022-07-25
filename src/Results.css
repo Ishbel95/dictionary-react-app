@@ -50,11 +50,21 @@
   line-height: 1.7em;
 }
 
-.sc-bwzfXH {
+form .sc-bwzfXH {
   background-color: var(--primary-color) !important;
   box-shadow: 4px 4px 10px rgb(58, 58, 58);
+  z-index: -1 !important;
 }
-
-.degmfB {
+form .sc-bwzfXH::before {
+  z-index: -1 !important;
+}
+form .degmfB {
   min-height: 100% !important;
+  z-index: -1 !important;
+}
+form .gMaiuK {
+  z-index: -1 !important;
+}
+form .gMaiuK::before {
+  z-index: -1 !important;
 }

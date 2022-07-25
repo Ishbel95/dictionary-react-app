@@ -10,6 +10,7 @@
   margin: 0 auto;
   display: block;
   width: min(90%, 700px);
+  z-index: 4 !important;
 }
 .homepage-form input {
   width: min(100%, 900px);
@@ -20,11 +21,21 @@
   text-align: center;
   font-size: clamp(2em, 3vw, 2.5em);
   padding: 0.3em;
+  z-index: 4 !important;
 }
 .homepage-form input::placeholder {
   color: var(--secondary-color);
   font-family: var(--primary-font);
   font-size: clamp(0.7em, 3vw, 2.5em);
+  z-index: 3 !important;
+  text-align: center;
+}
+.homepage-form input:after {
+  content: "";
+  width: 10px;
+  height: 20px;
+  background-color: white;
+  display: inline-block;
 }
 
 .homepage-form input:focus {
@@ -37,6 +48,7 @@
   .homepage-form {
     position: relative;
     top: 32em;
+    z-index: 4 !important;
   }
 }
 @media (max-width: 60em) {
@@ -44,6 +56,8 @@
     grid-template-rows: 25em 25em 25em 25em;
   }
   .homepage-form {
+    position: relative;
     margin: 5% auto;
+    z-index: 4 !important;
   }
 }
