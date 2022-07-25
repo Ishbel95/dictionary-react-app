@@ -3,6 +3,7 @@ import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 import "./Homepage.css";
+import { FontFace, Button, Container } from "react-nes-component";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
@@ -10,23 +11,27 @@ export default function Dictionary() {
   const [photos, setPhotos] = useState(null);
   let form = (
     <form onSubmit={search} className="form">
-      <input
-        type="search"
-        autoFocus={true}
-        onChange={updateKeyword}
-        placeholder="Search a word"
-      />
-    </form>
-  );
-  let homepage = (
-    <div className="Homepage">
-      <form onSubmit={search} className="homepage-form">
+      <Container isDark isRounded>
         <input
           type="search"
           autoFocus={true}
           onChange={updateKeyword}
           placeholder="Search a word"
         />
+      </Container>
+    </form>
+  );
+  let homepage = (
+    <div className="Homepage">
+      <form onSubmit={search} className="homepage-form">
+        <Container isDark isRounded>
+          <input
+            type="search"
+            autoFocus={true}
+            onChange={updateKeyword}
+            placeholder="Search a word"
+          />
+        </Container>
       </form>
       <div className="homepage-grid">
         <div className="red-box"></div>

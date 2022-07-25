@@ -10,7 +10,7 @@
   }
 }
 .stretch {
-  min-height: 100%;
+  min-height: 100% !important;
 }
 .red-box {
   background-color: var(--red);
