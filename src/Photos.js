@@ -1,6 +1,7 @@
 import React from "react";
 import "./Photos.css";
 
+// map through pexels api response and slice array to 16 els, render and img for each response.
 export default function Photos(props) {
   if (props.photos) {
     return (

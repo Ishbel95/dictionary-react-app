@@ -2,6 +2,7 @@ import React from "react";
 import "./Phonetics.css";
 import { Button } from "react-nes-component";
 
+// using props, create new instance of Audio constructor and play that audio onClick
 export default function Phonetics(props) {
   const audio = new Audio(props.phonetics.audio);
   function play() {

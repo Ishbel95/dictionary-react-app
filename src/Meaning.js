@@ -2,6 +2,8 @@ import React from "react";
 
 import { Container } from "react-nes-component";
 
+// use props to render meanings
+
 export default function Meaning(props) {
   return (
     <div className="Meaning">

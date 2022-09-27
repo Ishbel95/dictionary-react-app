@@ -6,9 +6,11 @@ import "./Homepage.css";
 import { Container } from "react-nes-component";
 
 export default function Dictionary() {
+  // state management
   const [keyword, setKeyword] = useState("");
   const [results, setResults] = useState(null);
   const [photos, setPhotos] = useState(null);
+  // form
   let form = (
     <form onSubmit={search} className="form">
       <Container isDark isRounded>
@@ -21,6 +23,7 @@ export default function Dictionary() {
       </Container>
     </form>
   );
+  // homepage
   let homepage = (
     <div className="Homepage">
       <form onSubmit={search} className="homepage-form">
@@ -41,15 +44,19 @@ export default function Dictionary() {
       </div>
     </div>
   );
+  // set photos to repsonse from api
   function handlePexelsResponse(response) {
     setPhotos(response.data.photos);
   }
+  // set results from dictionary to response of api
   function handleDictionaryResponse(response) {
     setResults(response.data[0]);
   }
+  // set keyword used in api call to value of form input
   function updateKeyword(event) {
     setKeyword(event.target.value);
   }
+  // on search make api call and recieve response using state.
   function search(event) {
     event.preventDefault();
 
@@ -61,6 +68,8 @@ export default function Dictionary() {
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsUrl, { headers: headers }).then(handlePexelsResponse);
   }
+  // if we get a response, render the results, sending result and photos props to results to component.
+  // else render original homepage
   if (results) {
     return (
       <div className="Dictionary">
